@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edeff2;
+}
+
+.header {
+  border: 2px solid black;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.body {
+  width: 100%;
+}
+
+.row-1 {
+  height: 750px;
+}
+
+.row-2 {
+  height: 1000px;
+  background-color: black;
+}
+
+.game-div {
+  border: 2px solid white;
+  color: #d7dadd;
+}
+
+.inside-div {
+  text-align: center;
+}
+
+.spaces {
+  color: white;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#word-geussed {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  margin: -20px 0 0 0;
+  padding: 0;
+  background-color: #3b3c3d;
+  outline: none;
+}
+
+#letter-geussed {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  margin: 0 0 0 1.2px;
+  border: 2px solid black;
+  font-size: 25px;
+}
+
+#text:hover {
+  color: white;
+  cursor: pointer;
+}
