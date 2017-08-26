@@ -20,8 +20,12 @@ for (i=0; i < randomWord.length; i ++) {
   const element = document.getElementById('random-word');
   element.appendChild(newDiv);
 }
+// When letter is geussed show in span id area
 
 function myFunction(event) {
-    var x = event.key;
+  var x = event.key;
     document.getElementById("letter-geussed").innerHTML = x;
+    if (x == randomWord[i]) {
+      alert("words");
+    }
 }
