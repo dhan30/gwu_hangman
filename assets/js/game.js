@@ -17,15 +17,26 @@ for (i=0; i < randomWord.length; i ++) {
   const newText = document.createTextNode("___" + " ");
   newDiv.className = "spaces";
   newDiv.appendChild(newText);
+  newDiv.setAttribute("value", "holymoly");
+  newDiv.setAttribute('type','hidden');
   const element = document.getElementById('random-word');
   element.appendChild(newDiv);
+  const c = newDiv.value;
+
+  document.getElementById('gogo').innerHTML = c;
 }
 // When letter is geussed show in span id area
 
 function myFunction(event) {
   var x = event.key;
+  var y =event.keyCode;
+  console.log(y);
+
+  if (y == 32 ) {
+    alert("wrong letter");
+  } else {
     document.getElementById("letter-geussed").innerHTML = x;
-    if (x == randomWord[i]) {
-      alert("words");
+    event.preventDefault();
     }
-}
+
+  }
