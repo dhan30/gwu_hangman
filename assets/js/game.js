@@ -65,7 +65,7 @@ updateDisplay: function(letter) {
 
     // User win, restart game
   if (this.updateWins() === true) {
-    console.log("you win!");
+    alert("you win!");
     this.restartGame();
   }
  }
